@@ -24,8 +24,8 @@
 
     <EditText
         android:id="@+id/et_usr_r"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="218dp"
+        android:layout_height="57dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="225dp"
         android:layout_marginEnd="101dp"
@@ -40,8 +40,8 @@
 
     <EditText
         android:id="@+id/et_pw_r"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="54dp"
         android:layout_marginStart="102dp"
         android:layout_marginTop="306dp"
         android:layout_marginEnd="99dp"
