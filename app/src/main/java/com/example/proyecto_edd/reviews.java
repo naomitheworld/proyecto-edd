@@ -15,7 +15,7 @@ Spinner ordenar;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reviews);
         getSupportActionBar().hide();
-        ordenar = findViewById(R.id.sp_ordenar);
+        ordenar = findViewById(R.id.sp_orden);
         String[] orden = {"Por aplicación","Por conductor","Más recientes","Más antiguas",
                 "Mejor calificación","Peor calificación"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,orden);
@@ -60,4 +60,5 @@ Spinner ordenar;
 
         }
     }
+
 }

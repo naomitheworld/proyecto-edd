@@ -7,7 +7,7 @@
     tools:context=".reviews">
 
     <Spinner
-        android:id="@+id/sp_ordenar"
+        android:id="@+id/sp_orden"
         android:layout_width="305dp"
         android:layout_height="52dp"
         android:layout_marginStart="52dp"
@@ -22,7 +22,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine3"
+        android:id="@+id/et_rev1"
         android:layout_width="298dp"
         android:layout_height="117dp"
         android:layout_marginStart="56dp"
@@ -39,7 +39,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine5"
+        android:id="@+id/et_rev3"
         android:layout_width="298dp"
         android:layout_height="117dp"
         android:layout_marginStart="56dp"
@@ -56,7 +56,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine4"
+        android:id="@+id/et_rev2"
         android:layout_width="298dp"
         android:layout_height="117dp"
         android:layout_marginStart="56dp"
