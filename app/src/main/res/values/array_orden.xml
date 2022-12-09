@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="orden">
+        <item>Por aplicación</item>
+        <item>Por conductor</item>
+        <item>Más recientes</item>
+        <item>Más antiguas</item>
+        <item>Mejor calificación</item>
+        <item>Peor calificación</item>
+    </string-array>
+</resources>
