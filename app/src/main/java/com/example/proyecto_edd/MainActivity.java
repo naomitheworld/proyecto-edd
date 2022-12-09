@@ -29,7 +29,7 @@ EditText usuario, contraseña;
         if (u.equals("")){
             Toast.makeText(this, "El usuario no puede estar vacío", Toast.LENGTH_LONG).show();
         }else{
-            Cursor row = db.rawQuery("SELECT * FROM usuarios WHERE usuario = '" + u + "' and contraseña ='" + c + "'", null);
+            Cursor row = db.rawQuery("SELECT usuario, contraseña FROM usuarios WHERE usuario = '" + u + "' and contraseña ='" + c + "'", null);
             if (row.equals(1)){
                 //abrir la siguiente pantalla
                 Intent ini = new Intent(this, inicio.class);
