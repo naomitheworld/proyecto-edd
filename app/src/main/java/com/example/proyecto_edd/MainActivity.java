@@ -16,6 +16,7 @@ EditText usuario, contraseña;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         usuario = findViewById(R.id.et_usr);
         contraseña = findViewById(R.id.et_pw);
     }

@@ -14,6 +14,7 @@ Spinner ordenar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reviews);
+        getSupportActionBar().hide();
         ordenar = findViewById(R.id.sp_ordenar);
         String[] orden = {"Por aplicación","Por conductor","Más recientes","Más antiguas",
                 "Mejor calificación","Peor calificación"};
@@ -28,31 +29,8 @@ Spinner ordenar;
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String seleccion = ordenar.getSelectedItem().toString();
+                mostrarReseña(seleccion);
 
-                if (seleccion.equals("Por aplicación")){
-
-                }
-                if (seleccion.equals("Pistache")){
-
-                }
-                if (seleccion.equals("Miel")){
-
-                }
-                if (seleccion.equals("Chorizo")){
-
-                }
-                if (seleccion.equals("Nuez garampiñada")){
-
-                }
-                if (seleccion.equals("Cajeta")){
-
-                }
-                if (seleccion.equals("Pistache garampiñado")){
-
-                }
-                if (seleccion.equals("Verduras orgánicas")){
-
-                }
             }
 
             @Override
@@ -60,5 +38,26 @@ Spinner ordenar;
 
             }
         });
+    }
+
+    public void mostrarReseña(String s){
+        if (s.equals("Por aplicación")){
+
+        }
+        if (s.equals("Por conductor")){
+
+        }
+        if (s.equals("Más recientes")){
+
+        }
+        if (s.equals("Más antiguas")){
+
+        }
+        if (s.equals("Mejor calificación")){
+
+        }
+        if (s.equals("Peor calificación")){
+
+        }
     }
 }

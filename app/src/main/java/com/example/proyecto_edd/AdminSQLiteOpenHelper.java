@@ -16,9 +16,10 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table usuarios(usuario text primary key, contraseña text)");
         db.execSQL("create table apps(nombre text primary key)");
-        db.execSQL("create table conductores(id int primary key, nombre text, sexo text, app text references apps(nombre))");
-        db.execSQL("create table review(id int primary key, app text references apps(nombre), conductor text references conductores(nombre), " +
-                "reseña text)");
+        db.execSQL("create table conductores(id int primary key, nombre text, sexo text," +
+                " app text references apps(nombre))");
+        db.execSQL("create table review(id int primary key, app text references apps(nombre), " +
+                "conductor text references conductores(nombre), reseña text)");
     }
 
     @Override

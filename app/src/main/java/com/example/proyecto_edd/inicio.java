@@ -16,6 +16,7 @@ private Spinner sp_apps;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
+        getSupportActionBar().hide();
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
         SQLiteDatabase db = admin.getReadableDatabase();
         Cursor c = db.rawQuery("select nombre from apps", null);
@@ -42,4 +43,8 @@ private Spinner sp_apps;
         });
     }
 
+    public void guardar_res(View v){
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+    }
 }

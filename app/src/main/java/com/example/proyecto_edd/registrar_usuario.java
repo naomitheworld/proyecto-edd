@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -14,10 +15,12 @@ EditText usuario, contraseña;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar_usuario);
+        getSupportActionBar().hide();
         usuario = findViewById(R.id.et_usr_r);
         contraseña = findViewById(R.id.et_pw_r);
     }
-    public void registrarUsuario(){
+
+    public void registrarUsuario(View v){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
         SQLiteDatabase db = admin.getReadableDatabase();
         String u = usuario.getText().toString();
