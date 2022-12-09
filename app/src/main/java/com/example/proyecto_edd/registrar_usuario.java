@@ -22,14 +22,16 @@ EditText usuario, contraseña;
 
     public void registrarUsuario(View v){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
-        SQLiteDatabase db = admin.getReadableDatabase();
+        SQLiteDatabase db = admin.getWritableDatabase();
         String u = usuario.getText().toString();
-        String c = contraseña.getText().toString();
-        ContentValues nvoUsuario = new ContentValues();
-        nvoUsuario.put("usuario", u);
-        nvoUsuario.put("contraseña", c);
-        db.insert("usuarios", null, nvoUsuario);
+        String p = contraseña.getText().toString();
+        ContentValues registro = new ContentValues();
+        registro.put("usuario",u);
+        registro.put("contraseña",p);
+        db.insert("usuarios", null, registro);
         db.close();
-        Toast.makeText(this, "Usuario registrado", Toast.LENGTH_LONG);
+        Toast.makeText(this, "Usuario guardado", Toast.LENGTH_LONG).show();
+        usuario.setText("");
+        contraseña.setText("");
     }
 }
