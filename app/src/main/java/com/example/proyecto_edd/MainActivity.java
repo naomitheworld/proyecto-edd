@@ -32,7 +32,7 @@ EditText usuario, contraseña;
             Cursor row = db.rawQuery("SELECT * FROM usuarios WHERE usuario = '" + u + "' and contraseña ='" + c + "'", null);
             if (row.equals(1)){
                 //abrir la siguiente pantalla
-                Intent ini = new Intent(this, nueva_review.class);
+                Intent ini = new Intent(this, inicio.class);
                 startActivity(ini);
             }else{
                 usuario.setText("");
