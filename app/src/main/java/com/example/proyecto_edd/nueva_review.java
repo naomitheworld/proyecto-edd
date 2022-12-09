@@ -23,7 +23,8 @@ private Spinner sp_apps;
         startManagingCursor(c);
         sp_apps = findViewById(R.id.sp_apps);
         String[] apps = new String[]{"nombre"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,apps);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item,apps);
         sp_apps.setAdapter(adapter);
 
         initialize();
@@ -45,6 +46,6 @@ private Spinner sp_apps;
 
     public void guardar_res(View v){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
-        SQLiteDatabase db = admin.getWritableDatabase();
+        SQLiteDatabase £db = admin.getWritableDatabase();
     }
 }

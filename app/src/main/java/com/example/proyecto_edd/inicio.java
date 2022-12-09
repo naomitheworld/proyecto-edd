@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class inicio extends AppCompatActivity {
 
@@ -14,12 +15,12 @@ public class inicio extends AppCompatActivity {
         getSupportActionBar().hide();
     }
 
-    public void nva_res(){
+    public void nva_res(View v){
         Intent nr = new Intent(this, nueva_review.class);
         startActivity(nr);
     }
 
-    public void ver_res(){
+    public void ver_res(View v){
         Intent vr = new Intent(this, reviews.class);
         startActivity(vr);
     }
