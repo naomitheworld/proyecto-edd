@@ -22,7 +22,7 @@ private Spinner sp_apps;
         Cursor c = db.rawQuery("select nombre from apps", null);
         startManagingCursor(c);
         sp_apps = findViewById(R.id.sp_apps);
-        String[] apps = new String[]{"nombre"};
+        String[] apps = new String[]{"Uber", "Didi", "inDrive", "Lyft", "Cabify"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item,apps);
         sp_apps.setAdapter(adapter);
